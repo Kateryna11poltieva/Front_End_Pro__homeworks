@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-one {
+    padding: 40px 0 40px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__title {
+        max-width: 600px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        color: #4832DC;
+    }
+
+    &__form {
+        max-width: 1000px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        background-color: rgba(31, 46, 129, 0.3);
+        border-radius: 20px;
+
+        &__cell {
+            width: 400px;
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: rgb(250, 251, 253);
+
+        }
+
+        &__cell::placeholder {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 42px;
+            color: #FFAE00;
+        }
+
+        &__btn {
+            max-width: 400px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #FFAE00;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.5;
+            color: rgb(250, 251, 253);
+            transition: 0.2s ease;
+
+        }
+
+        .section-one__form__btn:hover {
+            transform: scale(1.1);
+
+        }
+
+
+    }
+
+
+
+
+}
