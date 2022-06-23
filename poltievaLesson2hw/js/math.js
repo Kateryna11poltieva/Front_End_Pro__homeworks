@@ -9,7 +9,7 @@ let n4 = parseInt(prompt('Введіть четверте значення '))
 let min = Math.min ( n1, n2, n3, n4);
 let max = Math.max ( n1, n2, n3, n4);
 
-let answer = min+max;
+let answer = min*max;
 
 alert(`Добуток найбільшого і найменшого числа із заданих є ${answer}`)
 
