@@ -27,3 +27,5 @@ function average (arr) {
 }
 
 alert(average (arr))
+
+
