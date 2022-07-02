@@ -17,22 +17,9 @@ for (let i = 0; i < m; i++) {
         }
     }
 }
-
-for (let i = 0; i < m; i++) {
-    console.log('/');
-    for (let j = 0; j < n; j++) {
-        process.stdout.write((arr[i][j]))
-        if (j !== n-1) {
-            console.log(', ')
-        }
-    }
-    console.log('/')
-}
-
-
+console.log(arr.join('\n'))
 
 console.log(multiple)
 
 
 
-//return Math.floor(Math.random() * (max - min + 1)) + min;
