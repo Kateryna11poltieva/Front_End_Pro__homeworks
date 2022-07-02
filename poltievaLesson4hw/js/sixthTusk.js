@@ -118,9 +118,9 @@ const surnameFemale = {
     'Ю': ['Юденко', 'Юрак','Юхнович'],
     'Я': ['Яблуновська', 'Яковина','Ялова'],
 }
-let nameLatter = 'А'
-let surnameLatter = 'Г'
-let gender = 'male'
+let nameLatter = prompt('введіть першу букву імені')
+let surnameLatter = prompt('Введіть першу букву прізвища')
+let gender = prompt('Введіть male якщо ви хочете щоб вивелись данні для чоловіка та  female якщо для жінки ')
 let result = ''
 
 if ((nameLatter === Number)  && (surnameLatter === Number) ) {
