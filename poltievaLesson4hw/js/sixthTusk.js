@@ -1,5 +1,5 @@
 const maleNames = {
-    'А': ['Адам', 'Андрій,','Артем'],
+    'А': ['Адам', 'Андрій','Артем'],
     'Б': ['Біломир', 'Богдан','Борис'],
     'В': ['Валентин', 'Віталій','Віктор'],
     'Г': ['Георгій', 'Гліб','Григорій'],
@@ -119,15 +119,18 @@ const surnameFemale = {
     'Я': ['Яблуновська', 'Яковина','Ялова'],
 }
 let nameLatter = 'А'
-let surnameLatter = 'В'
-
+let surnameLatter = 'Г'
 let gender = 'male'
 let result = ''
-if (gender === 'male') {
+
+if ((nameLatter === Number)  && (surnameLatter === Number) ) {
+    alert('Введіть букву')
+}else if(gender === 'male') {
     result = generateName(nameLatter, surnameLatter,maleNames, surnameMale)
 }else if (gender === 'female') {
     result= generateName(nameLatter, surnameLatter,femaleNames,surnameFemale)
 }
+
 
 console.log(result)
 function generateName ( nameLatter, surnameLater, nameArray, surnameArray) {
