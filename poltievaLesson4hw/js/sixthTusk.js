@@ -118,16 +118,23 @@ const surnameFemale = {
     'Ю': ['Юденко', 'Юрак','Юхнович'],
     'Я': ['Яблуновська', 'Яковина','Ялова'],
 }
-let nameLatter = prompt('введіть першу букву імені')
-let surnameLatter = prompt('Введіть першу букву прізвища')
-let gender = prompt('Введіть male якщо ви хочете щоб вивелись данні для чоловіка та  female якщо для жінки ')
-let result = ''
+let firstNameLatter = prompt('введіть першу букву імені')
+let firstSurnameLatter = prompt('Введіть першу букву прізвища')
+let nameLatter = firstNameLatter.toUpperCase()
+let surnameLatter = firstSurnameLatter.toUpperCase()
 
-if ((nameLatter === Number)  && (surnameLatter === Number) ) {
+let gender = prompt('Введіть 1 якщо ви хочете щоб вивелись данні для чоловіка та  2 якщо для жінки ')
+let result = 0
+
+let getRandomIndex = (length)=> {
+    return Math.floor(Math.random() * (length - 1))
+}
+
+if ((nameLatter === Number)  || (surnameLatter === Number) ) {
     alert('Введіть букву')
-}else if(gender === 'male') {
+}else if(gender === 1) {
     result = generateName(nameLatter, surnameLatter,maleNames, surnameMale)
-}else if (gender === 'female') {
+}else if (gender === 2) {
     result= generateName(nameLatter, surnameLatter,femaleNames,surnameFemale)
 }
 
@@ -142,7 +149,10 @@ function generateName ( nameLatter, surnameLater, nameArray, surnameArray) {
 
 function getStringByLetter (letter, array) {
     let arr = array[letter]
-    let name = arr[Math.floor(Math.random() * (arr.length - 1))]
+    let index = getRandomIndex(arr.length);
+    let name = arr[index]
     return name
 }
+
+
 
