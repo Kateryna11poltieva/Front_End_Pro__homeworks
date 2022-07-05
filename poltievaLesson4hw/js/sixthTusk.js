@@ -130,7 +130,7 @@ let getRandomIndex = (length)=> {
     return Math.floor(Math.random() * (length - 1))
 }
 
-if ((nameLatter === Number)  || (surnameLatter === Number) ) {
+if ((firstNameLatter === Number)  || (firstSurnameLatter === Number) ) {
     alert('Введіть букву')
 }else if(gender === 1) {
     result = generateName(nameLatter, surnameLatter,maleNames, surnameMale)
